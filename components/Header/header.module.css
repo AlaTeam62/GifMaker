@@ -1,4 +1,4 @@
-.head_wrapper{
+.header__wrapper{
     background: #464775;
     height: 48px;
     width: 100%;
@@ -17,7 +17,7 @@
     margin: 0;
     color: #ffffff;
 }
-.component_wrapper{
+.component__wrapper{
     display: flex;
     justify-content: center;
     align-items: center;

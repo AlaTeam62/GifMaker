@@ -1,8 +1,8 @@
-import Head from "./head/Head"
+import Header from "../../components/Header/Header"
 
 const Main = () => {
     return (<div>        
-        <Head />
+        <Header />
     </div>)
 }
 export default Main;

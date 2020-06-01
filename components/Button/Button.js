@@ -8,9 +8,9 @@ export const typeButton = {
 const Button = (props) => {    
     const setTypeButton = (type) => {
         if(type === typeButton.next){
-            return style.button_next
+            return style.button__next
         } else {
-            return style.button_prev
+            return style.button__prev
         }
     }
     return (<button className={`${style.button} ${setTypeButton(props.type)}`}>

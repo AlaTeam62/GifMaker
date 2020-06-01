@@ -8,16 +8,16 @@
     color: #ffffff;
     margin-left: 5px;
 }
-.button_next{
+.button__next{
     background: #0067B8;
 }
-.button_next:hover{
+.button__next:hover{
     background: #005da6;
 }
-.button_prev{
+.button__prev{
     color: #000000;
     background: rgba(0,0,0,0.2);
 }
-.button_prev:hover{
+.button__prev:hover{
     background: rgba(0,0,0,0.3);
 }

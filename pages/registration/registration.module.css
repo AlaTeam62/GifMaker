@@ -17,11 +17,11 @@
     width: 100%;
     margin: 0 auto;
 }
-.login_header{
+.information{
     font-size: 21px;
     font-weight: 600;
 }
-.login__form_input{
+.registration_form_input{
     width: 100%;
     background: none;
     border: none;
@@ -32,21 +32,10 @@
     font-size: 15px;
     outline: none;
 }
-.login__form_registration{
-    font-size: 13px;
-}
-.login__form_registration a{
-    color: #0067b8;
-    text-decoration: none;
-}
-.login__form_registration a:hover{
-    color: #000000;
-    text-decoration: underline;
-}
-.login__form_input:focus{
+.registration_form_input:focus{
     border-color: #0067b8;
 }
-.login__form__buttons{
+.registration_form__buttons{
     margin-top: 20px;
     text-align: right;
 }
