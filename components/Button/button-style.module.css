@@ -1,0 +1,23 @@
+.button{
+    display: inline-block;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    color: #ffffff;
+    margin-left: 5px;
+}
+.button_next{
+    background: #0067B8;
+}
+.button_next:hover{
+    background: #005da6;
+}
+.button_prev{
+    color: #000000;
+    background: rgba(0,0,0,0.2);
+}
+.button_prev:hover{
+    background: rgba(0,0,0,0.3);
+}

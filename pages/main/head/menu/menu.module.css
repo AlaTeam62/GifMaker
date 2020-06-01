@@ -1,0 +1,47 @@
+.menu_wrapper{
+    display: block;
+    width: 68px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu_button{
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu_button:hover{
+    background: #6264a7;
+}
+.menu_button .menu_button_dots{
+    position: relative;
+    display: inline-block;
+    text-align: center;    
+}
+.menu_button .menu_button_dots,
+.menu_button .menu_button_dots::before,
+.menu_button .menu_button_dots::after{
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+    background: #ffffff;
+    margin: 3px;
+}
+.menu_button .menu_button_dots::before,
+.menu_button .menu_button_dots::after{
+    content: '';
+    position: absolute;    
+    top: -3px;
+}
+.menu_button .menu_button_dots::before{
+    left: -10px;
+}
+.menu_button .menu_button_dots::after{
+    right: -10px;
+}
