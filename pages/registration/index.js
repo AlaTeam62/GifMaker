@@ -1,9 +1,14 @@
+import Head from 'next/head'
 import Logo from "../../components/Logo/Logo";
 import Button, { typeButton } from "../../components/Button/Button";
 import s from './registration.module.css';
 
 const Registration = () => {
     return (<div className={s.container}>
+        <Head>
+            <title> ContactApp - Регистрация</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
         <h2 className={s.header}>Contact app</h2>
         <div className={s.wrapper}>
             <Logo />
@@ -13,7 +18,7 @@ const Registration = () => {
                 <input className={s.registration_form_input} placeholder='Username'></input>
                 <input className={s.registration_form_input} placeholder='Email'></input>
                 <input className={s.registration_form_input} placeholder='Password'></input>
-                <input className={s.registration_form_input} placeholder='Confirm password'></input>                
+                <input className={s.registration_form_input} placeholder='Confirm password'></input>
                 <div className={s.registration_form__buttons}>
                     <Button name='Назад' type={typeButton.prev} />
                     <Button name='Далее' type={typeButton.next} />

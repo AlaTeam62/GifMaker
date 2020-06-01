@@ -1,9 +1,14 @@
+import Head from 'next/head';
 import Logo from "../../components/Logo/Logo";
 import Button, { typeButton } from "../../components/Button/Button";
 import s from './login.module.css';
 
 const Login = () => {
     return (<div className={s.container}>
+        <Head>
+            <title> ContactApp - Войти</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
         <h2 className={s.header}>Contact app</h2>
         <div className={s.wrapper}>
             <Logo />

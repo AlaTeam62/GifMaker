@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title> GifApp - ContactApp </title>
+        <title> ContactApp - main page </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
