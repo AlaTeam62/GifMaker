@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/Link'
 import Main from './main/index'
 
 export default function Home() {

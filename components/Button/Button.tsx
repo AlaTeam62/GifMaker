@@ -5,8 +5,13 @@ export const typeButton = {
     prev: "prev"
 }
 
-const Button = (props) => {    
-    const setTypeButton = (type) => {
+type PropsType = {
+    type: typeof typeButton.next | typeof typeButton.prev
+    name: string
+}
+
+const Button = (props: PropsType) => {    
+    const setTypeButton = (type: string) => {
         if(type === typeButton.next){
             return style.button__next
         } else {
