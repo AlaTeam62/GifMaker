@@ -1,4 +1,5 @@
-import style from './button-style.module.css';
+// import style from './button-style.module.css';
+const style = require('button-style.module.css')
 
 export const typeButton = {
     next: "next",
