@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Logo from "../../components/Logo/Logo";
 import Button, { typeButton } from "../../components/Button/Button";
-import style from './registration.module.css';
+const style = require('./registration.module.css');
 
 const Registration = () => {
     return (<div className={style.container}>

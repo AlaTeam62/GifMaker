@@ -1,5 +1,5 @@
-import s from './header.module.css';
-import Menu from '../menu/Menu';
+import Menu from '../Menu/Menu';
+const s =  require('./header.module.css');
 
 const Header = () => {
     return (<header className={s.header__wrapper}>

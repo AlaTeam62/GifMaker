@@ -1,11 +1,11 @@
-import s from './menu.module.css';
+const style = require('./menu.module.css');
 
 const Menu = () => {
-    return (<menu className={s.menu__wrapper}>
-        <div className={s.menu__button}>
-            <div className={s.menu__button_dots}></div>
-            <div className={s.menu__button_dots}></div>
-            <div className={s.menu__button_dots}></div>
+    return (<menu className={style.menu__wrapper}>
+        <div className={style.menu__button}>
+            <div className={style.menu__button_dots}></div>
+            <div className={style.menu__button_dots}></div>
+            <div className={style.menu__button_dots}></div>
         </div>
     </menu>)
 }

@@ -1,4 +1,4 @@
-import style from './logo.module.css';
+const style = require('./logo.module.css');
 
 const Logo = () => {
     return (<a href='#' className={style.logo}>

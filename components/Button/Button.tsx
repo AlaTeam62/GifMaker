@@ -1,5 +1,4 @@
-// import style from './button-style.module.css';
-const style = require('button-style.module.css')
+import { ButtonBlue, ButtonGrey } from './style.js';
 
 export const typeButton = {
     next: "next",
@@ -11,17 +10,11 @@ type PropsType = {
     name: string
 }
 
-const Button = (props: PropsType) => {    
-    const setTypeButton = (type: string) => {
-        if(type === typeButton.next){
-            return style.button__next
-        } else {
-            return style.button__prev
-        }
-    }
-    return (<button className={`${style.button} ${setTypeButton(props.type)}`}>
-        {props.name}
-    </button>)
+const Button = (props: PropsType) => {
+    return (props.type === typeButton.next ?
+        <ButtonBlue>{props.name}</ButtonBlue> :
+        <ButtonGrey>{props.name}</ButtonGrey>
+    )
 }
 
 export default Button;
