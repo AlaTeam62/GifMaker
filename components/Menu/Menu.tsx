@@ -1,13 +1,13 @@
-const style = require('./menu.module.css');
+import { MenuWrapper, MenuButton, MenuButtonDots } from './style';
 
 const Menu = () => {
-    return (<menu className={style.menu__wrapper}>
-        <div className={style.menu__button}>
-            <div className={style.menu__button_dots}></div>
-            <div className={style.menu__button_dots}></div>
-            <div className={style.menu__button_dots}></div>
-        </div>
-    </menu>)
+    return (<MenuWrapper>
+        <MenuButton>
+            <MenuButtonDots></MenuButtonDots>
+            <MenuButtonDots></MenuButtonDots>
+            <MenuButtonDots></MenuButtonDots>            
+        </MenuButton>
+    </MenuWrapper>)
 }
 
 export default Menu;

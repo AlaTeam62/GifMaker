@@ -1,30 +1,30 @@
 import Head from 'next/head';
 import Logo from "../../components/Logo/Logo";
 import Button, { typeButton } from "../../components/Button/Button";
-const style = require('./login.module.css');
+import { Container, Header, Wrapper, BlockHeader, ButtonsBlock, FormLink, FormInput } from './style';
 
 const Login = () => {
-    return (<div className={style.container}>
+    return (<Container>
         <Head>
             <title> ContactApp - Войти</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h2 className={style.header}>Contact app</h2>
-        <div className={style.wrapper}>
+        <Header>Contact app</Header>
+        <Wrapper>
             <Logo />
-            <p className={style.login_header}>Войти</p>
-            <form className={style.login__form}>
-                <input className={style.login__form_input} placeholder='Username'></input>
-                <input className={style.login__form_input} placeholder='Password'></input>
-                <p className={style.login__form_registration}>Нет учётной записи? <a href='#'>Создайте её.</a></p>
-                <p className={style.login__form_registration}><a href='#'>Не удаётся получить доступ к своей учетной записи?</a></p>
-                <div className={style.login__form__buttons}>
+            <BlockHeader>Войти</BlockHeader>
+            <form>
+                <FormInput placeholder='Username'></FormInput>
+                <FormInput placeholder='Password'></FormInput>
+                <FormLink>Нет учётной записи? <a href='/registration'>Создайте её.</a></FormLink>
+                <FormLink><a href='#'>Не удаётся получить доступ к своей учетной записи?</a></FormLink>
+                <ButtonsBlock>
                     <Button name='Назад' type={typeButton.prev} />
                     <Button name='Далее' type={typeButton.next} />
-                </div>
+                </ButtonsBlock>
             </form>
-        </div>
-    </div>)
+        </Wrapper>
+    </Container>)
 }
 
 export default Login;

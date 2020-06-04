@@ -1,4 +1,4 @@
-import { ButtonBlue, ButtonGrey } from './style.js';
+import { ButtonBlue, ButtonGrey } from './style';
 
 export const typeButton = {
     next: "next",

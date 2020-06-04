@@ -1,9 +1,9 @@
-const style = require('./logo.module.css');
+import {LogoWrapper, LogoImg } from './style'
 
 const Logo = () => {
-    return (<a href='#' className={style.logo}>
-        <div className={style.logo__img}><h1>Logo Contact</h1></div>        
-    </a>)
+    return (<LogoWrapper href='#'>
+        <LogoImg><h1>Logo Contact</h1></LogoImg>
+    </LogoWrapper>)
 }
 
 export default Logo;

@@ -1,27 +1,33 @@
-.container{
+import styled from 'styled-components';
+
+export const Container = styled.div`
     display: block;
     width: 100%;
     padding-top: 10%;
-}
-.header{
+`;
+
+export const Header = styled.h2`
     text-align: center;
     color: #6264a7;
     font-size: 36px;
     font-weight: 400;
-}
-.wrapper{
+`;
+
+export const Wrapper = styled.div`
     background: #ffffff;
     box-shadow: 0 2px 6px rgba(0,0,0,.2);
     padding: 44px;
     max-width: 440px;
     width: 100%;
     margin: 0 auto;
-}
-.login_header{
+`;
+
+export const BlockHeader = styled.p`
     font-size: 24px;
     font-weight: 600;
-}
-.login__form_input{
+`;
+
+export const FormInput = styled.input`
     width: 100%;
     background: none;
     border: none;
@@ -31,22 +37,24 @@
     margin-bottom: 10px;
     font-size: 15px;
     outline: none;
-}
-.login__form_registration{
+    &:focus{
+        border-color: #0067b8;
+    }
+`;
+
+export const FormLink = styled.p`
     font-size: 13px;
-}
-.login__form_registration a{
-    color: #0067b8;
-    text-decoration: none;
-}
-.login__form_registration a:hover{
-    color: #000000;
-    text-decoration: underline;
-}
-.login__form_input:focus{
-    border-color: #0067b8;
-}
-.login__form__buttons{
+    a{
+        color: #0067b8;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #000000;
+        text-decoration: underline;
+    }
+`;
+
+export const ButtonsBlock = styled.div`
     margin-top: 20px;
     text-align: right;
-}
+`;

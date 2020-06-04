@@ -1,4 +1,6 @@
-.header__wrapper{
+import styled from 'styled-components';
+
+export const HeaderWrapper = styled.header`
     background: #464775;
     height: 48px;
     width: 100%;
@@ -11,16 +13,18 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-}
-.nameApp{
+`;
+
+export const NameApp = styled.h2`
     padding: 0;
     margin: 0;
     color: #ffffff;
-}
-.component__wrapper{
+`;
+
+export const ComponentWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     box-sizing: border-box;
-}
+`;
