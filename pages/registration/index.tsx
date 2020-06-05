@@ -1,31 +1,31 @@
 import Head from 'next/head';
 import Logo from "../../components/Logo/Logo";
 import Button, { typeButton } from "../../components/Button/Button";
-const style = require('./registration.module.css');
+import { Container, Header, Wrapper, ButtonsBlock, FormInput } from '../login/style';
 
 const Registration = () => {
-    return (<div className={style.container}>
+    return (<Container>
         <Head>
             <title> ContactApp - Регистрация</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h2 className={style.header}>Contact app</h2>
-        <div className={style.wrapper}>
+        <Header>Contact app</Header>
+        <Wrapper>
             <Logo />
-            <p className={style.information}>Введите адрес электронной почты</p>
+            <p className='information'>Введите адрес электронной почты</p>
             <p>Этот адрес электронной почты будет использован для настройки ContactApp. Если у вас уже есть учетная запись, можно использовать соответствующий адрес.</p>
-            <form className={style.registration_form}>
-                <input className={style.registration_form_input} placeholder='Username'></input>
-                <input className={style.registration_form_input} placeholder='Email'></input>
-                <input className={style.registration_form_input} placeholder='Password'></input>
-                <input className={style.registration_form_input} placeholder='Confirm password'></input>
-                <div className={style.registration_form__buttons}>
+            <form className='registration_form'>
+            <FormInput placeholder='Username'></FormInput>
+                <FormInput placeholder='Email'></FormInput>
+                <FormInput placeholder='Password'></FormInput>
+                <FormInput placeholder='Confirm password'></FormInput>
+                <ButtonsBlock>
                     <Button name='Назад' type={typeButton.prev} />
                     <Button name='Далее' type={typeButton.next} />
-                </div>
+                </ButtonsBlock>
             </form>
-        </div>
-    </div>)
+        </Wrapper>
+    </Container>)
 }
 
 export default Registration;
