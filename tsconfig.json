@@ -29,6 +29,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "pages/_document.js"
+    "**/*.tsx", "pages/_document.js", "components/AsideBlock/style.js", "components/AvatarBlock/style.js", "components/Button/style.js", "components/Header/style.js", "components/Logo/style.js", "components/Menu/style.js", "pages/login/style.js"
   ]
 }
