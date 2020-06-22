@@ -1,9 +1,11 @@
 import { AsideBlockWrapper } from "./style"
 
 const AsideBlock = () => {
-    return (<AsideBlockWrapper>
+    return (
+    <AsideBlockWrapper>
 
-    </AsideBlockWrapper>)
+    </AsideBlockWrapper>
+    )
 }
 
 export default AsideBlock;
