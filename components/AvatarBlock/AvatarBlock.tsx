@@ -1,11 +1,12 @@
-import { Wrapper, Avatar } from "./style";
+import React from 'react';
+import { Wrapper, Avatar } from './style';
 
-const AvatarBlock = () => {
-    return (
-        <Wrapper>
-            <Avatar src='/default_avatar.png' alt='avatar' />
-        </Wrapper>
-    )
-}
+const AvatarBlock: React.FC = () => {
+  return (
+    <Wrapper>
+      <Avatar src="/images/default/default_avatar.png" alt="avatar" />
+    </Wrapper>
+  );
+};
 
 export default AvatarBlock;
