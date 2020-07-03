@@ -1,15 +1,16 @@
+import React from 'react';
 import { MenuWrapper, MenuButton, MenuButtonDots } from './style';
 
 const Menu = () => {
-    return (
+  return (
     <MenuWrapper>
-        <MenuButton>
-            <MenuButtonDots></MenuButtonDots>
-            <MenuButtonDots></MenuButtonDots>
-            <MenuButtonDots></MenuButtonDots>            
-        </MenuButton>
+      <MenuButton>
+        <MenuButtonDots></MenuButtonDots>
+        <MenuButtonDots></MenuButtonDots>
+        <MenuButtonDots></MenuButtonDots>
+      </MenuButton>
     </MenuWrapper>
-    )
-}
+  );
+};
 
 export default Menu;

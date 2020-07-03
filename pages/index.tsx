@@ -1,16 +1,3 @@
-import Head from 'next/head'
-import Main from './main/index'
+import DefaultPage from '../components/DefaultPage';
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title> ContactApp - main page </title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Main/>
-
-    </div>
-  )
-}
+export default DefaultPage;

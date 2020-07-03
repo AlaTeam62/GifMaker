@@ -1,11 +1,12 @@
+import React from 'react';
 import { ButtonBlue } from './style';
 
 type PropsType = {
-    name: string
-}
+  name: string;
+};
 
 const ButtonNext = (props: PropsType) => {
-    return <ButtonBlue>{props.name}</ButtonBlue>
-}
+  return <ButtonBlue>{props.name}</ButtonBlue>;
+};
 
 export default ButtonNext;

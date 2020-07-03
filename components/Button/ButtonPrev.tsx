@@ -1,11 +1,12 @@
+import React from 'react';
 import { ButtonGrey } from './style';
 
-type PropsType = {   
-    name: string
-}
+type PropsType = {
+  name: string;
+};
 
 const ButtonPrev = (props: PropsType) => {
-    return <ButtonGrey>{props.name}</ButtonGrey>
-}
+  return <ButtonGrey>{props.name}</ButtonGrey>;
+};
 
 export default ButtonPrev;
