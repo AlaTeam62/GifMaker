@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { AsideBlockWrapper } from './style';
-import AppButton from './AppButton/AppButton';
+import AppButton from '../AppButton/AppButton';
 
 const AsideBlock: React.FC = () => {
-  const [activeButton, setActiveButton] = useState('gifmaker');
+  const [activeButton, setActiveButton] = useState('');
 
   return (
     <AsideBlockWrapper>

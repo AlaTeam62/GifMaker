@@ -1,8 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Logo from '../Logo/Logo';
-import ButtonNext from '../Button/ButtonNext';
-import ButtonPrev from '../Button/ButtonPrev';
+import ButtonAside from '../ButtonAside/ButtonAside';
 import {
   Container,
   Header,
@@ -13,7 +12,7 @@ import {
   FormInput,
 } from '../../styles/style';
 
-const Login = () => {
+const Login: React.FC = () => {
   return (
     <Container>
       <Head>
@@ -34,8 +33,8 @@ const Login = () => {
             <a href="#">Не удаётся получить доступ к своей учетной записи?</a>
           </FormLink>
           <ButtonsBlock>
-            <ButtonPrev name="Назад" />
-            <ButtonNext name="Далее" />
+            <ButtonAside nameBtn="Назад" color="grey" />
+            <ButtonAside nameBtn="Далее" color="blue" />
           </ButtonsBlock>
         </form>
       </Wrapper>

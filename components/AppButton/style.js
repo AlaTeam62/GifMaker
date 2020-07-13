@@ -12,6 +12,7 @@ export const ButtonStyle = styled.div`
     }
     &.active{
         border-left: 4px solid #ffffff;
+        background: rgba(98,100,167,.25);
     }
     img{
         width: 30px;

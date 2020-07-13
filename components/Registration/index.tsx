@@ -1,8 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Logo from '../Logo/Logo';
-import ButtonNext from '../Button/ButtonNext';
-import ButtonPrev from '../Button/ButtonPrev';
+import ButtonAside from '../ButtonAside/ButtonAside';
 import {
   Container,
   Header,
@@ -11,7 +10,7 @@ import {
   FormInput,
 } from '../../styles/style';
 
-const Registration = () => {
+const Registration: React.FC = () => {
   return (
     <Container>
       <Head>
@@ -33,8 +32,8 @@ const Registration = () => {
           <FormInput placeholder="Password"></FormInput>
           <FormInput placeholder="Confirm password"></FormInput>
           <ButtonsBlock>
-            <ButtonPrev name="Назад" />
-            <ButtonNext name="Далее" />
+            <ButtonAside nameBtn="Назад" color="grey" />
+            <ButtonAside nameBtn="Далее" color="blue" />
           </ButtonsBlock>
         </form>
       </Wrapper>
