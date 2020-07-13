@@ -25,8 +25,4 @@ const ButtonAside: React.FC<PropsType> = (props: PropsType): JSX.Element => {
   return <>{getButton(color)}</>;
 };
 
-ButtonAside.propTypes = {
-  nameBtn: PropsType.string.nameBtn,
-};
-
 export default ButtonAside;
